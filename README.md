@@ -3,7 +3,7 @@ Shuffles M3U playlists containing multipart songs so that groups of multipart so
 Multipart songs could be entire albums, songs with a part1 and part2, anything that one wants an enforced ordering for while still having access to shuffle. 
 
 ## Usage
-To use, call `java main.Main path_to_file_containing_aggregate_playlists`
+To use, call `java main.Main path_to_file_containing_aggregate_playlists > outputplaylist.m3u`
 
 The file containing the aggregate plalists has 2 items per line: the path to the m3u playlist on your computer, and then the number of items per set in that playlist. Each playlist has to be in agreement with the number of items per group specified in the aggregate playlist file.
 
@@ -32,6 +32,7 @@ And each file might look like:
   #EXTM3U
   #EXT info
   /path/to/The Old Testament
+  #ext info
   /path/to/The New Testament
 ```
 
