@@ -41,6 +41,7 @@ public class Main {
 		
 		Collections.shuffle(finalList);
 		
+		System.out.println("#EXTM3U");
 		finalList.stream().forEach(p -> System.out.println(p.print()));
 	}
 
